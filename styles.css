@@ -90,6 +90,7 @@ li {
 #bicycle ul {
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 #bicycle li {
@@ -100,7 +101,7 @@ li {
     text-align: center;
 }
 
-@media screen and (max-width:600px) {
+ @media screen and (max-width:600px) {
     #about.content{
         flex-direction: column;
     }
@@ -110,4 +111,4 @@ li {
       #bicycle li {
         width: 100%;
       }
-}
+} 
