@@ -99,3 +99,15 @@ li {
 #footer {
     text-align: center;
 }
+
+@media screen and (max-width:600px) {
+    #about.content{
+        flex-direction: column;
+    }
+    #bicycle ul {
+        flex-direction: column;
+      }
+      #bicycle li {
+        width: 100%;
+      }
+}
