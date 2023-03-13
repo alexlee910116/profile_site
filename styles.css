@@ -1,12 +1,11 @@
-html {
-    font-size: 100%;
-}
-body {
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    text-decoration: none;
+body {
+    color:#383e45;
+    font-size: 0.9rem;
 }
 
 img {
@@ -17,14 +16,62 @@ li {
     list-style: none;
 }
 
-.site-title {
-    width: 120px;
-    padding: 10px 0;
+a {
+    text-decoration: none;
 }
 
-.site-title a {
-    display: block;
-  }
+.wrapper {
+    max-width: 900px;
+    margin: 10px auto 10px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+.site-title {
+    width: 160px;
+    background-color:black;
+    color: #fff;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    margin-left: 40px;
+}
+
+.header ul li a {
+    color: #24292e;
+}
+
+.mainvisual img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 80px;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .section-title {
     display: inline-block;
@@ -34,81 +81,42 @@ li {
     border-bottom: solid 1px black;
 }
 
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto 100px auto;
-    padding: 0 4%;
-    text-align: center;
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto auto;
-  }
-
-#header ul {
-    display: flex;
-    padding: 10px 0;
-}
-
-#header li {
-    margin-left:40px;
-  }
-
-#header li a {
-    color: #24292e;
-}
-
-#header li a:hover {
-    opacity: 0.7;
-}
-
-#mainvisual {
+.content {
     margin-bottom: 80px;
 }
 
-#about .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 30px;
-}
-
-#about .text {
+.text  {
     text-align: left;
 }
 
-#bicycle ul {
+.bicycle-list {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    margin-bottom: 80px;
 }
 
-#bicycle li {
-    width: 30%;
-  }
+.bicycle li {
+    flex:1;
+    margin-bottom: 20px;
+}
 
-#footer {
+h3 {
+    margin: 10px 0;
+}
+
+.footer {
     text-align: center;
+    margin-bottom: 40px;
 }
 
- @media screen and (max-width:600px) {
-    #about.content{
+@media screen and (max-width:600px) {
+    .about .content {
         flex-direction: column;
     }
-    #bicycle ul {
+    .bicycle ul {
         flex-direction: column;
-      }
-      #bicycle li {
+    }
+    .bicycle li {
         width: 100%;
-      }
-} 
+    }
+}
