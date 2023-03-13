@@ -89,14 +89,14 @@ a {
     text-align: left;
 }
 
-.bicycle ul {
+.bicycle-list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
 }
 
 .bicycle li {
-    width: 30%;
+    flex:1;
     margin-bottom: 20px;
 }
 
